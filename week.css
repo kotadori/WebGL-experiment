@@ -1,0 +1,14 @@
+.BirthDay {
+    background: linear-gradient(to right, #de4141, #e8ac51, #f2e55c, #39a869, #4784bf, #5d5099, #a55b9a);
+    /*虹色*/
+    color: white;
+    text-shadow: -0.7px -0.7px 0 black, 0px -0.7px 0 black, 0.7px -0.7px 0 black, -0.7px 0px 0 black, 0.7px 0px 0 black, -0.7px 0.7px 0 black, 0px 0.7px 0 black, 0.7px 0.7px 0 black;
+}
+
+.Sat {
+    background: lightblue;
+}
+
+.Sun {
+    background: lightpink;
+}

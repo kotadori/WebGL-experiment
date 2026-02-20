@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Day3 WebGL入門</title>
+    <script src="./Day3.js"></script>
+
+    <script id="vertexShader" type="x-shader/x-vertex">
+      attribute vec3 position;
+      void main(void){
+        gl_Position = vec4(position, 1.0);
+      }
+    </script>
+    <script id="fragmentShader" type="x-shader/x-fragment">
+      precision mediump float;
+      uniform vec4 uGlobalColor;
+      void main(void){
+        gl_FragColor = uGlobalColor;
+      }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>

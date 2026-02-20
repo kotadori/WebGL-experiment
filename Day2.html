@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Day2 実験第2テストページ</title>
+    <script type="text/javascript">
+        <!--
+              function btn_onclick(td) {
+                const divtag = document.createElement("div");
+                const input = document.getElementById("inputtext");
+                const text = document.createTextNode(input.value);
+                divtag.appendChild(text);
+                td.appendChild(divtag);
+              }
+        -->
+    </script>
+    <link rel="stylesheet" type="text/css" href="./week.css">
+</head>
+
+<body>
+    <center>
+        <table border="1">
+            <caption>1週間の予定表</caption>
+            <colgroup>
+                <col col span="7" style="width:100px;">
+            </colgroup>
+            <tr align="center" class="head">
+                <th>1/20</th>
+                <th>1/21</th>
+                <th>1/22</th>
+                <th class="BirthDay">1/23</th>
+                <th class="Sat">1/24</th>
+                <th class="Sun">1/25</th>
+                <th>1/26</th>
+            </tr>
+            <tr align="center">
+                <td onclick="btn_onclick(this)">実験</td>
+                <td onclick="btn_onclick(this)">模擬授業</td>
+                <td onclick="btn_onclick(this)">ネットワーク応用演習</td>
+                <td class="BirthDay" onclick="btn_onclick(this)">My birth day</td>
+                <td class="Sat" onclick="btn_onclick(this)">競馬</td>
+                <td class="Sun" onclick="btn_onclick(this)">課題</td>
+                <td onclick="btn_onclick(this)">抜歯</td>
+            </tr>
+        </table>
+    </center>
+
+    <input type="text" value="入力" id="inputtext" />
+
+</body>
+
+</html>
